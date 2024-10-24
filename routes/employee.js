@@ -29,7 +29,7 @@ router.put('/employees/:eid', async (req, res) => {
 
 // Delete employee
 router.delete('/employees', async (req, res) => {
-  await Employee.findByIdAndDelete(req.query.eid);
+  await Employee.findByIdAndDelete(req.query.eid);x
   res.status(200).json({ message: 'Employee deleted successfully' });
 });
 
